@@ -1,0 +1,31 @@
+.button-group
+{
+    margin-left: 25px;
+}
+
+h2
+{
+
+    text-align: center;
+}
+
+li
+{
+    list-style: none;
+}
+
+.arrow-up
+{
+    height: 50px;
+    width: 70px;
+}
+
+body
+{
+    background-color:#AFEEEE;
+}
+
+section
+{
+    background-color: white;
+}
