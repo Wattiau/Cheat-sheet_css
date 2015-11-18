@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="foundation/css/foundation.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.scss">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/html5.ico" />
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <script type="application/javascript" src="foundation/js/foundation/foundation.js"></script>
+    <title>Cheat sheet CSS</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="main-header" id="titre-principale">Cheat Sheet CSS</h1>
+        <ul class="header-subnav">
+            <li><a href="#Mise-en-forme">Mise en forme</a></li>
+            <li><a href="#couleur-fond">Couleur-Fond</a></li>
+            <li><a href="#boites">Boites</a></li>
+            <li><a href="#positionement">positionnement</a></li>
+            <li><a href="#listes">Listes</a></li>
+            <li><a href="#tableaux">Tableaux</a></li>
+        </ul>
+    </header>
+
+    <!-- DEBUT DE L'ASIDE -->
+
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet" type="text/css">
+
+    <div class="off-canvas-wrap move-right" data-offcanvas>
+
+        <div class="inner-wrap">
+
+            <a class="left-off-canvas-toggle" href="#"><i class="fi-list"></i></a>
+
+            <!-- Off Canvas Menu -->
+
+            <aside class="left-off-canvas-menu logo hide-for-small-only">
+                <div class="icon-bar vertical five-up">
+
+                    <a class="item">
+                        <i class="fi-css3"></i>
+                        <label>CSS</label>
+                    </a>
+                    <a href="#titre-principale" class="item">
+                        <i class="fi-arrow-up"></i>
+                        <label>Up</label>
+                    </a>
+                    <a href="https://fr-fr.facebook.com/" class="item">
+                        <i class="fi-social-facebook"></i>
+                        <label>Facebook</label>
+                    </a>
+                    <a href="https://twitter.com/?lang=fr" class="item">
+                        <i class="fi-social-twitter"></i>
+                        <label>Twitter</label>
+                    </a>
+                    <a class="item">
+                        <i class="fi-mail"></i>
+                        <label>Contact</label>
+                    </a>
+                </div>
+            </aside>
+
+            <!-- main content goes here -->
+
+            <h1 class="row">
+                <div class="small-12 columns">
+                    <h1 class="text-center titlesection" id="Mise-en-forme">Mise en forme</h1>
+                </div>
+            </h1>
+
+            <section class="medium-12 medium-pull-12 columns">
+                <ul>
+                    <li>
+                        <code>font-family</code>Nom de police.
+                    </li>
+                    <li>
+                        <code>@font-face</code> Police personnalisée.
+                    </li>
+                    <li>
+                        <code>font-size</code>Taille du texte.
+                    </li>
+                    <li>
+                        <code>font-weight</code>Gras.
+                    </li>
+                    <li>
+                        <code>font-style</code> Italique.
+                    </li>
+                    <li>
+                        <code>text-decoration</code>Soulignement, ligne au-dessus, barré ou clignotant.
+                    </li>
+                    <li>
+                        <code>font-variant</code>Petites capitales.
+                    </li>
+                    <li>
+                        <code>text-transform</code>Capitales.
+                    </li>
+                    <li>
+                        <code>text-align</code>Aligner du texte (center, left...).
+                    </li>
+                    <li>
+                        <code>vertical-align</code>Alignement vertical ( cellulede tableau ou élément inline-block uniquement ).
+                    </li>
+                    <li>
+                        <code>line-height</code>Hauteur de ligne.
+                    </li>
+                    <li>
+                        <code>text-indent</code>Alinéa.
+                    </li>
+                    <li>
+                        <code>white-space</code>Césure.
+                    </li>
+                    <li>
+                        <code>word-wrap</code>Césure forcée.
+                    </li>
+                    <li>
+                        <code>text-shadow</code>Ombre de texte.
+                    </li>
+                </ul>
+            </section>
+
+            <h1 class="row">
+                <div class="small-12 columns">
+                    <h1 class="text-center titlesection" id="couleur-fond">Propriétés de couleur et de fond :</h1>
+                </div>
+            </h1>
+
+            <section class="medium-12 medium-pull-12 columns">
+                <ul>
+                    <li>
+                        <code>color</code>Couleur du texte.
+                    </li>
+                    <li>
+                        <code>background-color</code>Couleur de fond.
+                    </li>
+                    <li>
+                        <code>background-image</code>Image de fond.
+                    </li>
+                    <li>
+                        <code>background-attachment</code>Fond fixe.
+                    </li>
+                    <li>
+                        <code>background-repeat</code>Répétition du fond.
+                    </li>
+                    <li>
+                        <code>background-position</code>Position du fond.
+                    </li>
+                    <li>
+                        <code>opacity</code>Transparence.
+                    </li>
+                </ul>
+            </section>
+
+            <h1 class="row">
+                <div class="small-12 columns">
+                    <h1 class="text-center titlesection" id="boites">Propriétés des boites :</h1>
+                </div>
+            </h1>
+
+            <section class="medium-12 medium-pull-12 columns">
+                <ul>
+                    <li>
+                        <code>width</code>
+                        Largeur.
+                    </li>
+                    <li>
+                        <code>height</code>
+                        Hauteur.
+                    </li>
+                    <li>
+                        <code>min-width</code>Largeur minimale.
+                    </li>
+                    <li>
+                        <code>max-width</code>Largeur maximale.
+                    </li>
+                    <li>
+                        <code>min-height</code>Hauteur minimale.
+                    </li>
+                    <li>
+                        <code>max-height</code>Hauteur maximale.
+                    </li>
+                    <li>
+                        <code>margin-top</code>Marge en haut.
+                    </li>
+                    <li>
+                        <code>margin-left</code>Marge a gauche.
+                    </li>
+                    <li>
+                        <code>margin-right</code>Marge a droite.
+                    </li>
+                    <li>
+                        <code>margin-bottom</code>Marge en bas.
+                    </li>
+                    <li>
+                        <code>padding-left</code>Marge intérieur a gauche.
+                    </li>
+                    <li>
+                        <code>padding-right</code>Marge intérieur a droite.
+                    </li>
+                    <li>
+                        <code>padding-bottom</code> Marge intérieur en bas.
+                    </li>
+                    <li>
+                        <code>padding-top</code>Marge en haut.
+                    </li>
+                    <li>
+                        <code>border-wdth</code>Epaisseur de bordure.
+                    </li>
+                    <li>
+                        <code>border-color</code>Couleur de bordure.
+                    </li>
+                    <li>
+                        <code>border-style</code>Type de bordure.
+                    </li>
+                    <li>
+                        <code>border-radius</code>Bordure arrondie.
+                    </li>
+                    <li>
+                        <code>box-shadow</code>Ombre de boite.
+                    </li>
+                </ul>
+            </section>
+
+            <h1 class="row">
+                <div class="small-12 columns">
+                    <h1 class="text-center titlesection" id="positionement">Propriétés de positionement et d'affichage :</h1>
+                </div>
+            </h1>
+
+            <section class="medium-12 medium-pull-12 columns">
+                <ul>
+                    <li>
+                        <code>display</code>Type d'élément (block, inline,inline-block,none...).
+                    </li>
+                    <li>
+                        <code>visibility</code>Visibilité.
+                    </li>
+                    <li>
+                        <code>clip</code>Affichage d'une partie de l'élément.
+                    </li>
+                    <li>
+                        <code>overflow</code>En cas de dépassement.
+                    </li>
+                    <li>
+                        <code>float</code>Follant.
+                    </li>
+                    <li>
+                        <code>clear</code>Arret d'un flottant.
+                    </li>
+                    <li>
+                        <code>position</code>Positionnement.
+                    </li>
+                    <li>
+                        <code>top</code>Position par rapport au haut.
+                    </li>
+                    <li>
+                        <code>bottom</code>Position par rapport au bas.
+                    </li>
+                    <li>
+                        <code>left</code>Position par rapport a la gauche.
+                    </li>
+                    <li>
+                        <code>right</code>Position par rapport a la droite.
+                    </li>
+                    <li>
+                        <code>z-index</code>Ordre d'affichage en cas de superposition. La plus grande valeur est affichée par-dessus les autres.
+                    </li>
+                </ul>
+            </section>
+
+            <h1 class="row">
+                <div class="small-12 columns">
+                    <h1 class="text-center titlesection" id="listes">Propriétés des listes :</h1>
+                </div>
+            </h1>
+
+            <section class="medium-12 medium-pull-12 columns">
+                <ul>
+                    <li>
+                        <code>list-style-type</code>Type de liste.
+                    </li>
+                    <li>
+                        <code>list-style-position</code>Position en retrait.
+                    </li>
+                    <li>
+                        <code>list-style-image</code>Puce personnalisé.
+                    </li>
+                </ul>
+            </section>
+
+            <h1 class="row">
+                <div class="small-12 columns">
+                    <h1 class="text-center titlesection" id="tableaux">Propriétés des tableaux :</h1>
+                </div>
+            </h1>
+
+            <section class="medium-12 medium-pull-12 columns">
+                <ul>
+                    <li>
+                        <code>border-collapse</code>Fusion des bordures.
+                    </li>
+                    <li>
+                        <code>emty-cells</code>Affichage des cellules vides.
+                    </li>
+                    <li>
+                        <code>caption-side</code>Position du titre du tableau.
+                    </li>
+                </ul>
+            </section>
+            <!-- close the off-canvas menu -->
+
+        </div>
+    </div>
+</body>
+
+</html>
